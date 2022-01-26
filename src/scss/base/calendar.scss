@@ -1,0 +1,107 @@
+.calendar {
+  width: 45rem;
+  height: 52rem;
+  box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.548);
+  background-color: rgba(0, 0, 0, 0.883);
+
+  &__control-active {
+    color: white;
+    background-color: rgb(58, 22, 58);
+  }
+
+  &__control-preview,
+  &__control-next {
+    width: 6rem;
+    font-size: 2.5rem;
+    border-left: solid 0.5rem rgba(255, 255, 255, 0.555);
+    border-right: solid 0.5rem rgba(255, 255, 255, 0.555);
+    border-radius: 2.5rem 0 2.5rem 0;
+    box-shadow: 0 0 0.5rem 0 white;
+    color: rgba(255, 255, 255, 0.226);
+    transition: 0.5s;
+  }
+
+  &__control-preview:hover,
+  &__control-next:hover {
+    color: white;
+    background-color: rgba(58, 22, 58, 0.425);
+    border-left: solid 0.5rem white;
+    border-right: solid 0.5rem white;
+    box-shadow: 0 0 1rem 0 white;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  &__days {
+    padding: 0.2rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__days div {
+    width: calc(40.2rem / 7);
+    height: 5rem;
+    margin: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    outline: solid 0.5px rgba(255, 255, 255, 0.123);
+    box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.39);
+    background-color: rgba(0, 0, 0, 0.609);
+    transition: 0.5s;
+  }
+
+  &__days div:hover {
+    font-size: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 2rem 0 2rem 0;
+    outline: solid 0.5px rgba(255, 255, 255, 0.123);
+    box-shadow: 0 0 1rem 0 rgb(255, 255, 255);
+  }
+
+  &__week-day {
+    font-size: 1.5rem;
+  }
+
+  &__control {
+    width: 91%;
+    height: 10rem;
+    padding: 0 2rem;
+    background-color: rgba(58, 22, 58, 0.425);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    text-shadow: 0 0 1rem white;
+  }
+
+  &__title-month {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+  }
+
+  &__week {
+    width: 98%;
+    height: 5rem;
+    padding: 0 0.4rem;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.39);
+  }
+
+  &__week-day {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    width: calc(44.2rem / 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0.3rem 0.5rem white;
+  }
+}

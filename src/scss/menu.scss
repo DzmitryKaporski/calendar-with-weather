@@ -1,0 +1,39 @@
+.menu {
+  display: flex;
+}
+
+.menu__events,
+.menu__days {
+  width: 22.5rem;
+  height: 1.8rem;
+  text-align: center;
+  padding: 0.4rem 0rem 0rem 0rem;
+  border-radius: 6rem 0 2rem 0;
+  border-top: solid 0.1rem white;
+  color: rgba(255, 255, 255, 0.459);
+  background-color: rgb(46, 17, 46);
+  box-shadow: 0 0 0.5rem 0 rgba(255, 255, 255, 0.966);
+  list-style-type: none;
+  transition: 1s;
+
+  &:hover,
+  &:hover {
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.966);
+    background-color: rgb(46, 17, 46);
+  }
+}
+
+.menu__prev-days,
+.menu__next-days {
+  opacity: 0.5;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.none {
+  display: none;
+}

@@ -1,0 +1,23 @@
+html {
+  font-size: 60%;
+}
+
+body {
+  margin: 0;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  background: url(https://clck.ru/SdWJu);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.main {
+  width: 100%;
+  padding: 8.5% 0 8.5% 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
